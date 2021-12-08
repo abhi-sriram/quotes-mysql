@@ -14,3 +14,9 @@
 ### Installation
 * Pull the server and client folders individually
 * run <code>npm install</code> to fetch node modules in both folders
+
+### MYSQL
+* Install MySQL in your machine
+* https://dev.mysql.com/downloads/installer/ select your machine
+* Open MySQL command line client or Workbench
+
