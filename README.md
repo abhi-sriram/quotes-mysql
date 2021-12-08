@@ -19,4 +19,23 @@
 * Install MySQL in your machine
 * https://dev.mysql.com/downloads/installer/ select your machine
 * Open MySQL command line client or Workbench
+* I hope you have knowledge about SQL commands
+* <code>
+  create database quotesdb;
+  </code>
+* <code>use quotesdb;</code>
+* <code>
+  create table user (uid varchar(100) not null primary key, email varchar(45) not null unique, hash varchar(255) not null, salt varchar(255) not null);
+  </code>
+* <code> 
+  create table quote (id int primary key auto_increment,quote varchar(255) unique not null,author varchar(40) not null, created_at datetime not null default current_timestamp,   updated_at datetime not null default current_timestamp on update current_timestamp,uid varchar(255), foreign key(uid) references user (uid));
+  </code>
+  
+### Start
+* To start the server run <code>npm start</code>
+* To start the client run <code>npm run dev</code>
+* Create a new user using client application and insert quotes using the user id uid from mysql command line client
 
+### Issues
+Ping me on 
+  
